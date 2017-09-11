@@ -1,57 +1,13 @@
-.. You should enable this project on travis-ci.org and coveralls.io to make
-   these badges work. The necessary Travis and Coverage config files have been
-   generated for you.
-
-.. image:: https://travis-ci.org/ViderumGlobal/ckanext-perth.svg?branch=master
-    :target: https://travis-ci.org/ViderumGlobal/ckanext-perth
-
-.. image:: https://coveralls.io/repos/ViderumGlobal/ckanext-perth/badge.svg
-  :target: https://coveralls.io/r/ViderumGlobal/ckanext-perth
-
-.. image:: https://pypip.in/download/ckanext-perth/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-perth/
-    :alt: Downloads
-
-.. image:: https://pypip.in/version/ckanext-perth/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-perth/
-    :alt: Latest Version
-
-.. image:: https://pypip.in/py_versions/ckanext-perth/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-perth/
-    :alt: Supported Python versions
-
-.. image:: https://pypip.in/status/ckanext-perth/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-perth/
-    :alt: Development Status
-
-.. image:: https://pypip.in/license/ckanext-perth/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-perth/
-    :alt: License
-
-=============
-ckanext-perth
-=============
-
-.. Put a description of your extension here:
-   What does it do? What features does it have?
-   Consider including some screenshots or embedding a video!
-
-
 ------------
 Requirements
 ------------
 
-For example, you might want to mention here which versions of CKAN this
-extension works with.
+This extension is used together with `ckanext-tayside <https://github.com/ViderumGlobal/ckanext-tayside>`_.
 
 
 ------------
 Installation
 ------------
-
-.. Add any additional install steps to the list below.
-   For example installing any non-Python dependencies or adding any required
-   config settings.
 
 To install ckanext-perth:
 
@@ -61,26 +17,15 @@ To install ckanext-perth:
 
 2. Install the ckanext-perth Python package into your virtual environment::
 
-     pip install ckanext-perth
+     pip install git+https://github.com/ViderumGlobal/ckanext-perth.git#egg=ckanext-perth
 
 3. Add ``perth`` to the ``ckan.plugins`` setting in your CKAN
    config file (by default the config file is located at
    ``/etc/ckan/default/production.ini``).
 
-4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
+5. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
 
      sudo service apache2 reload
-
-
----------------
-Config Settings
----------------
-
-Document any optional config settings here. For example::
-
-    # The minimum number of hours to wait before re-checking a resource
-    # (optional, default: 24).
-    ckanext.perth.some_setting = some_default_value
 
 
 ------------------------
@@ -93,74 +38,38 @@ do::
     git clone https://github.com/ViderumGlobal/ckanext-perth.git
     cd ckanext-perth
     python setup.py develop
-    pip install -r dev-requirements.txt
 
 
------------------
-Running the Tests
------------------
+----------
+Modify CSS
+----------
 
-To run the tests, do::
+This extension uses LESS for styles. All changes must be made in one of the LESS
+files located in the ``ckanext-perth/ckanext/perth/fanstatic/less`` folder.
 
-    nosetests --nologcapture --with-pylons=test.ini
+In order to compile those files to CSS, the `less <https://www.npmjs.com/package/less>`_
+npm module is used.
 
-To run the tests and produce a coverage report, first make sure you have
-coverage installed in your virtualenv (``pip install coverage``) then run::
+First make sure that you have installed `Node.js <https://nodejs.org/en/>`_. That
+will install the ``npm`` package manager. After that, open up the terminal and
+change the current directory to ``ckanext-perth/ckanext/perth/fanstatic``.
 
-    nosetests --nologcapture --with-pylons=test.ini --with-coverage --cover-package=ckanext.perth --cover-inclusive --cover-erase --cover-tests
+Then run the following command that is going to install LESS::
 
+    npm install less
 
----------------------------------
-Registering ckanext-perth on PyPI
----------------------------------
+After a successful installation, run the next command to compile the main less
+file ``perth.less`` to ``perth.css``::
 
-ckanext-perth should be availabe on PyPI as
-https://pypi.python.org/pypi/ckanext-perth. If that link doesn't work, then
-you can register the project on PyPI for the first time by following these
-steps:
+    ./node_modules/.bin/lessc less/perth.less css/perth.css
 
-1. Create a source distribution of the project::
-
-     python setup.py sdist
-
-2. Register the project::
-
-     python setup.py register
-
-3. Upload the source distribution to PyPI::
-
-     python setup.py sdist upload
-
-4. Tag the first release of the project on GitHub with the version number from
-   the ``setup.py`` file. For example if the version number in ``setup.py`` is
-   0.0.1 then do::
-
-       git tag 0.0.1
-       git push --tags
+Every time there is some change in one of the less files, the upper command
+needs to be run to compile those files to one css file.
 
 
-----------------------------------------
-Releasing a New Version of ckanext-perth
-----------------------------------------
+---------
+Funded by
+---------
 
-ckanext-perth is availabe on PyPI as https://pypi.python.org/pypi/ckanext-perth.
-To publish a new version to PyPI follow these steps:
-
-1. Update the version number in the ``setup.py`` file.
-   See `PEP 440 <http://legacy.python.org/dev/peps/pep-0440/#public-version-identifiers>`_
-   for how to choose version numbers.
-
-2. Create a source distribution of the new version::
-
-     python setup.py sdist
-
-3. Upload the source distribution to PyPI::
-
-     python setup.py sdist upload
-
-4. Tag the new release of the project on GitHub with the version number from
-   the ``setup.py`` file. For example if the version number in ``setup.py`` is
-   0.0.2 then do::
-
-       git tag 0.0.2
-       git push --tags
+.. image:: smart.png
+.. image:: euro_scot.png
