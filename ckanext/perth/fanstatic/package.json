@@ -1,0 +1,11 @@
+{
+  "name": "ckanext-perth",
+  "scripts": {
+    "watch": "less-watch-compiler less/ css/ perth.less",
+    "less": "./node_modules/.bin/lessc less/perth.less css/perth.css"
+  },
+  "devDependencies": {
+    "less": "^2.7.2",
+    "less-watch-compiler": "^1.6.7"
+  }
+}

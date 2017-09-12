@@ -1,0 +1,26 @@
+body {
+  background: @color-white;
+  font-family: @baseFontFamily;
+}
+
+.site-footer {
+  background: @color-neutral;
+}
+
+.homepage {
+  .module-search {
+    .module-content {
+      background-color: @color-primary;
+    }
+    .tags {
+      background-color: @color-secondary;
+    }
+  }
+}
+
+[role=main],
+.main {
+  &:not(.hero) {
+    background: @color-white;
+  }
+}

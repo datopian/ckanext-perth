@@ -1,0 +1,207 @@
+/* Open Sans from Google Fonts */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic';
+/* Theme LESS assets */
+/* Colors */
+/* Fonts */
+/* Responsive */
+/* News */
+/* Navigation */
+.nav-pills-active-bg-color {
+  background-color: #78388e;
+}
+.inputs-style {
+  border-color: #caced7;
+}
+.inputs-style:focus {
+  border-color: #168198;
+}
+.hero {
+  background-color: #78388e;
+}
+.hero-search .image-credit {
+  color: #ffffff;
+}
+body {
+  background: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+.site-footer {
+  background: #6d778a;
+}
+.homepage .module-search .module-content {
+  background-color: #168198;
+}
+.homepage .module-search .tags {
+  background-color: #78388e;
+}
+[role=main]:not(.hero),
+.main:not(.hero) {
+  background: #ffffff;
+}
+.account-masthead {
+  background-color: #caced7;
+}
+.account-masthead .account .notifications a span.badge {
+  background-color: #168198;
+}
+.account-masthead .account ul li a {
+  color: #4b5363;
+}
+.account-masthead .account ul li a:hover {
+  background-color: #4b5363;
+}
+.masthead {
+  background: #ffffff;
+}
+.masthead a {
+  color: #168198;
+}
+.masthead .btn-navbar {
+  background-color: #6d778a;
+}
+.masthead .btn-navbar:hover,
+.masthead .btn-navbar:focus {
+  background-color: #168198;
+}
+.btn-primary {
+  background-color: #168198;
+}
+.nav-main {
+  background-color: #168198;
+}
+.nav-main .nav-collapse .nav > li a {
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .nav-main .nav-collapse .nav > li a:hover,
+  .nav-main .nav-collapse .nav > li a:focus {
+    color: #ffffff;
+    background-color: #78388e;
+  }
+}
+.nav-main .nav a {
+  color: #ffffff;
+}
+.nav-main .nav a:hover,
+.nav-main .nav a:focus {
+  background-color: #78388e;
+}
+.nav-main .nav .active a {
+  background-color: #78388e;
+}
+/* All modules */
+.module-heading {
+  background-color: #e1e3e9;
+}
+/* Search */
+.module-hero-search .search-input input {
+  border-color: #78388e;
+}
+.module-hero-search .search-input input:focus {
+  border-color: #168198;
+}
+.module-hero-search .search-input button i {
+  color: #78388e;
+}
+/* Topics */
+.module-topics a {
+  color: #78388e;
+}
+.news-header {
+  background-color: #e1e3e9;
+}
+.news-header .btn:hover {
+  background-color: #ffffff;
+}
+.news-item {
+  color: #4b5363;
+  border: 1px solid #e1e3e9;
+}
+.news-item:hover,
+.news-item:focus {
+  box-shadow: 0 0 30px #caced7;
+  color: #4b5363;
+}
+.add-dataset-modal {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  z-index: 1050;
+  display: none;
+}
+.add-dataset-modal-box {
+  display: table-cell;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border-radius: 6px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  background-clip: padding-box;
+  outline: none;
+  text-align: center;
+}
+.add-dataset-modal-description {
+  margin-top: 30px;
+}
+.add-dataset-modal-description p {
+  font-weight: bold;
+}
+.add-dataset-modal-description ul {
+  text-align: left;
+}
+.add-dataset-modal .close {
+  font-size: 35px;
+  color: white;
+  position: relative;
+  top: -32px;
+}
+.add-dataset-modal-backdrop {
+  display: none;
+}
+#dataset-resources {
+  border: 1px solid #dddddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#dataset-resources h3,
+#dataset-resources .search-form {
+  display: inline;
+}
+.resource-list {
+  margin-top: 15px;
+}
+.search-giant.search-input button i:hover {
+  color: #168198;
+}
+.simple-input .field .btn-search:hover {
+  color: #168198;
+}
+#field-user-search {
+  border-color: #caced7;
+}
+.search-icon-hover {
+  color: #168198;
+}
+.organization-logos {
+  background-color: #f6f6f8;
+}
+.organization-logos figure figcaption {
+  color: #6d778a;
+}
+.js .image-upload input[type=file] {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+.nav-tabs .fa:last-child,
+.module-heading .fa:last-child,
+.btn .fa:last-child {
+  margin-right: 3px;
+}
+.resource-tracking-summary {
+  margin-top: -20px !important;
+  border-top: none !important;
+}
+/*# sourceMappingURL=perth.css.map */

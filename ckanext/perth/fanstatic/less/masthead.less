@@ -1,0 +1,38 @@
+.account-masthead {
+  background-color: @color-neutral-light;
+  .account {
+    .notifications {
+      a {
+        span {
+          &.badge {
+            background-color: @color-primary;
+          }
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          color: @color-neutral-dark;
+          &:hover {
+            background-color: @color-neutral-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+.masthead {
+  background: @color-white;
+  a {
+    color: @color-primary;
+  }
+  .btn-navbar {
+    background-color: @color-neutral;
+    &:hover,
+    &:focus {
+      background-color: @color-primary;
+    }
+  }
+}
