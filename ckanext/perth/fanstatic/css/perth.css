@@ -74,12 +74,10 @@ body {
 .nav-main .nav-collapse .nav > li a {
   color: #ffffff;
 }
-@media (max-width: 768px) {
-  .nav-main .nav-collapse .nav > li a:hover,
-  .nav-main .nav-collapse .nav > li a:focus {
-    color: #ffffff;
-    background-color: #78388e;
-  }
+.nav-main .nav-collapse .nav > li a:hover,
+.nav-main .nav-collapse .nav > li a:focus {
+  color: #ffffff;
+  background-color: #78388e;
 }
 .nav-main .nav a {
   color: #ffffff;
