@@ -5,6 +5,7 @@
 /* Fonts */
 /* Responsive */
 /* News */
+/* Hero */
 /* Navigation */
 .nav-pills-active-bg-color {
   background-color: #78388e;
@@ -17,6 +18,7 @@
 }
 .hero {
   background-color: #78388e;
+  background-image: url("../../../../base/images/background-tile.jpg");
 }
 .hero-search .image-credit {
   color: #ffffff;
