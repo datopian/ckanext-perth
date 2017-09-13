@@ -6,10 +6,9 @@
 /* Responsive */
 /* News */
 /* Hero */
+/* Grid */
 /* Navigation */
-.nav-pills-active-bg-color {
-  background-color: #78388e;
-}
+/* Navigation */
 .inputs-style {
   border-color: #caced7;
 }
@@ -39,6 +38,26 @@ body {
 [role=main]:not(.hero),
 .main:not(.hero) {
   background: #ffffff;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+  border-color: #168198;
+}
+.pill {
+  background-color: #6d778a;
 }
 .account-masthead {
   background-color: #caced7;
@@ -74,20 +93,58 @@ body {
 .nav-main .nav-collapse .nav > li a {
   color: #ffffff;
 }
-.nav-main .nav-collapse .nav > li a:hover,
-.nav-main .nav-collapse .nav > li a:focus {
-  color: #ffffff;
-  background-color: #78388e;
-}
-.nav-main .nav a {
-  color: #ffffff;
-}
 .nav-main .nav a:hover,
 .nav-main .nav a:focus {
+  color: #ffffff;
   background-color: #78388e;
 }
+.nav-main .nav a:hover:before,
+.nav-main .nav a:focus:before {
+  border-top: 17px solid #ffffff;
+  border-bottom: 17px solid #ffffff;
+  border-left: 6px solid #78388e;
+}
 .nav-main .nav .active a {
+  color: #ffffff;
   background-color: #78388e;
+}
+.nav-main .nav .active a:before {
+  border-top: 17px solid #ffffff;
+  border-bottom: 17px solid #ffffff;
+  border-left: 6px solid #78388e;
+}
+.module .nav > li a:hover {
+  border-radius: 30px;
+}
+.nav > li a:hover,
+.nav > li a:focus {
+  color: #ffffff;
+  background-color: #6d778a;
+}
+.nav > li a:hover:before,
+.nav > li a:focus:before {
+  border-top: 17px solid #ffffff;
+  border-bottom: 17px solid #ffffff;
+  border-left: 6px solid #6d778a;
+}
+.nav-item.active a,
+.nav-aside.active a,
+.nav-item.active a:hover,
+.nav-aside.active a:hover,
+.nav-item.active a:focus,
+.nav-aside.active a:focus {
+  color: #ffffff;
+  background-color: #6d778a;
+}
+.nav-item.active a:before,
+.nav-aside.active a:before,
+.nav-item.active a:hover:before,
+.nav-aside.active a:hover:before,
+.nav-item.active a:focus:before,
+.nav-aside.active a:focus:before {
+  border-top: 17px solid #ffffff;
+  border-bottom: 17px solid #ffffff;
+  border-left: 6px solid #6d778a;
 }
 /* All modules */
 .module-heading {
