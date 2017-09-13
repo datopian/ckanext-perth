@@ -1,7 +1,13 @@
 /* Navigation */
 
-.nav-pills-active-bg-color {
-  background-color: @color-secondary;
+.nav-pills-bg-color(@color: @color-neutral) {
+  color: @color-white;
+  background-color: @color;
+  &:before {
+    border-top: @nav-item-height/2 solid @nav-item-before-top-bottom-border-color;
+    border-bottom: @nav-item-height/2 solid @nav-item-before-top-bottom-border-color;
+    border-left: 6px solid @color;
+  }
 }
 
 .inputs-style {
