@@ -6,27 +6,55 @@
         a {
           color: @color-white;
         }
-        a {
-          &:hover,
-          &:focus {
-            color: @color-white;
-            background-color: @color-secondary;
-          }
-        }
       }
     }
   }
   .nav {
     a {
-      color: @color-white;
       &:hover,
       &:focus {
-        .nav-pills-active-bg-color;
+        .nav-pills-bg-color(@color-secondary);
       }
     }
     .active {
       a {
-        .nav-pills-active-bg-color;
+        .nav-pills-bg-color(@color-secondary);
+      }
+    }
+  }
+}
+
+.module {
+  .nav {
+    >li {
+      a {
+        &:hover {
+          border-radius: @grid-gutter-width;
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  >li {
+    a {
+      &:hover,
+      &:focus {
+        .nav-pills-bg-color;
+      }
+    }
+  }
+}
+
+.nav-item,
+.nav-aside {
+  &.active {
+    a {
+      &,
+      &:hover,
+      &:focus {
+        .nav-pills-bg-color;
       }
     }
   }
