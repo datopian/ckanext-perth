@@ -59,6 +59,10 @@ input[type="color"]:focus {
 .pill {
   background-color: #6d778a;
 }
+.media-grid {
+  background-color: #f6f6f8;
+  border-color: #e1e3e9;
+}
 .account-masthead {
   background-color: #caced7;
 }
