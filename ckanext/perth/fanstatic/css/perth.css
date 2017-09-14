@@ -117,16 +117,16 @@ input[type="color"]:focus {
   border-bottom: 17px solid #ffffff;
   border-left: 6px solid #78388e;
 }
-.module .nav > li a:hover {
-  border-radius: 30px;
+.secondary .nav > li a:hover {
+  border-radius: 15px;
 }
-.nav > li a:hover,
-.nav > li a:focus {
+.secondary .nav > li a:hover,
+.secondary .nav > li a:focus {
   color: #ffffff;
   background-color: #6d778a;
 }
-.nav > li a:hover:before,
-.nav > li a:focus:before {
+.secondary .nav > li a:hover:before,
+.secondary .nav > li a:focus:before {
   border-top: 17px solid #ffffff;
   border-bottom: 17px solid #ffffff;
   border-left: 6px solid #6d778a;
