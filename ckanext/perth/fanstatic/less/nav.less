@@ -24,24 +24,17 @@
   }
 }
 
-.module {
+.secondary {
   .nav {
     >li {
       a {
         &:hover {
-          border-radius: @grid-gutter-width;
+          border-radius: @grid-gutter-width/2;
         }
-      }
-    }
-  }
-}
-
-.nav {
-  >li {
-    a {
-      &:hover,
-      &:focus {
-        .nav-pills-bg-color;
+        &:hover,
+        &:focus {
+          .nav-pills-bg-color;
+        }
       }
     }
   }
