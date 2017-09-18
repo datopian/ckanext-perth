@@ -36,3 +36,25 @@
     }
   }
 }
+
+.language-picker {
+  li {
+    &.active {
+      a {
+        color: @color-white;
+        &,
+        &:hover{
+          background-color: @color-secondary;
+        }
+      }
+    }
+    a {
+      &:hover {
+        color: @color-white;
+        background-color: lighten(@color-secondary, 30%);
+      }
+      color: @color-neutral;
+      background-color: @color-neutral-light;
+    }
+  }
+}
