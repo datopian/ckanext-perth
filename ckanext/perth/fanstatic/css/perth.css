@@ -88,6 +88,21 @@ input[type="color"]:focus {
 .masthead .btn-navbar:focus {
   background-color: #168198;
 }
+.language-picker li.active a {
+  color: #ffffff;
+}
+.language-picker li.active a,
+.language-picker li.active a:hover {
+  background-color: #78388e;
+}
+.language-picker li a {
+  color: #6d778a;
+  background-color: #caced7;
+}
+.language-picker li a:hover {
+  color: #ffffff;
+  background-color: #c08dd2;
+}
 .btn-primary {
   background-color: #168198;
 }
