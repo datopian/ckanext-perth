@@ -1,5 +1,5 @@
 /* Open Sans from Google Fonts */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic';
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i';
 /* Theme LESS assets */
 /* Colors */
 /* Fonts */
@@ -13,7 +13,7 @@
   border-color: #caced7;
 }
 .inputs-style:focus {
-  border-color: #168198;
+  border-color: #16829a;
 }
 .hero {
   background-color: #78388e;
@@ -24,13 +24,13 @@
 }
 body {
   background: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .site-footer {
-  background: #6d778a;
+  background: #4b5363;
 }
 .homepage .module-search .module-content {
-  background-color: #168198;
+  background-color: #16829a;
 }
 .homepage .module-search .tags {
   background-color: #78388e;
@@ -54,7 +54,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus {
-  border-color: #168198;
+  border-color: #16829a;
 }
 .pill {
   background-color: #6d778a;
@@ -64,13 +64,13 @@ input[type="color"]:focus {
   border-color: #e1e3e9;
 }
 .account-masthead {
-  background-color: #caced7;
+  background-color: #4b5363;
 }
 .account-masthead .account .notifications a span.badge {
-  background-color: #168198;
+  background-color: #16829a;
 }
 .account-masthead .account ul li a {
-  color: #4b5363;
+  color: #caced7;
 }
 .account-masthead .account ul li a:hover {
   background-color: #4b5363;
@@ -79,14 +79,14 @@ input[type="color"]:focus {
   background: #ffffff;
 }
 .masthead a {
-  color: #168198;
+  color: #16829a;
 }
 .masthead .btn-navbar {
   background-color: #6d778a;
 }
 .masthead .btn-navbar:hover,
 .masthead .btn-navbar:focus {
-  background-color: #168198;
+  background-color: #16829a;
 }
 .language-picker li.active a {
   color: #ffffff;
@@ -104,10 +104,10 @@ input[type="color"]:focus {
   background-color: #c08dd2;
 }
 .btn-primary {
-  background-color: #168198;
+  background-color: #16829a;
 }
 .nav-main {
-  background-color: #168198;
+  background-color: #16829a;
 }
 .nav-main .nav-collapse .nav > li a {
   color: #ffffff;
@@ -174,7 +174,7 @@ input[type="color"]:focus {
   border-color: #78388e;
 }
 .module-hero-search .search-input input:focus {
-  border-color: #168198;
+  border-color: #16829a;
 }
 .module-hero-search .search-input button i {
   color: #78388e;
@@ -248,19 +248,19 @@ input[type="color"]:focus {
   margin-top: 15px;
 }
 .search-giant.search-input button i:hover {
-  color: #168198;
+  color: #16829a;
 }
 .simple-input .field .btn-search:hover {
-  color: #168198;
+  color: #16829a;
 }
 #field-user-search {
   border-color: #caced7;
 }
 .search-icon-hover {
-  color: #168198;
+  color: #16829a;
 }
 .organization-logos {
-  background-color: #f6f6f8;
+  background-color: #e1e3e9;
 }
 .organization-logos figure figcaption {
   color: #6d778a;
